@@ -658,7 +658,7 @@ span{
 @media (max-width : 768px ) {
     #menu-icon {
         display: block;
-        padding-right: 7rem;
+        padding-right: 1rem;
     }
     #darkMode-icon{
         position: absolute;
@@ -666,7 +666,7 @@ span{
         right: 7rem;
         font-size: 2.6rem;
         margin-bottom: .1rem;
-        margin-right: 7rem;
+        margin-right: 1rem;
 
     }
     
