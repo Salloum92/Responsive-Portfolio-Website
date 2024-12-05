@@ -30,11 +30,14 @@
 html{
     font-size: 62.5%;
     overflow-x: hidden;
+ 
 }
 
 body{
     background-color: var(--bg-color);
     color: var(--text-color);
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -45,9 +48,9 @@ body{
     position: fixed;
     top: 0;
     left: 0;
-    padding: 2rem 7%;
+    padding: 2rem 3%;
     width: 100%;
-    z-index: 100;
+    z-index: 1000;
     transition: 0.5s;
 }
 
@@ -599,8 +602,7 @@ span{
     html {
         font-size: 55%;
     }
-    
-
+   
     .home .profession-container {
         height: 85.8rem;
     }
@@ -620,11 +622,12 @@ span{
         padding: 2rem 3%;
     }
 
+    
     .home .profession-container .profession-box{
         right: -22rem;
     }
 
-    .home .portfolio-container.overlay{
+    .home .overlay{
         right: -15rem;
     }
 }
@@ -653,7 +656,7 @@ span{
 @media (max-width : 768px ) {
     #menu-icon {
         display: block;
-        padding: 0 7rem;
+        margin-right: 7rem;
     }
     #darkMode-icon{
         position: absolute;
@@ -661,12 +664,10 @@ span{
         right: 7rem;
         font-size: 2.6rem;
         margin-bottom: .1rem;
-        padding: 7rem;
+        margin-right: 7rem;
 
     }
-    .header {
-        padding: 1rem 3%;
-    }
+    
 
     .navbar {
         display: none;
@@ -675,8 +676,8 @@ span{
         position: absolute;
         top: 100%;
         left: 0;
-        width: 100%;
-        padding: 1rem 0;
+        width: calc(100% - 7%);
+        padding: 1rem 7%;
         box-shadow: 0 .2rem 1rem rgba(0, 0, 0, 0.1);
     }
 
@@ -693,8 +694,7 @@ span{
         font-size: 2rem;
     }
     .navbar a:nth-child(1),
-    .navbar a:nth-child(2),
-    .navbar a:nth-child(3){
+    .navbar a:nth-child(2){
         color: var(--text-color);
     }
 
@@ -803,6 +803,7 @@ span{
 }
 
 @media (max-width : 617px ){
+    
     .portfolio .portfolio-container {
         grid-template-columns: 1fr;
     }
@@ -861,3 +862,4 @@ span{
         transform: rotate(180deg) translate(-210px , -335px);
     }
 }
+
