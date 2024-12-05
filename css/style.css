@@ -796,6 +796,15 @@ span{
     .home .profession-box .profession:nth-child(4){
         margin-right: 90px;
     }  
+    .profession-container .overlay{
+        border-top: 100px solid var(--main-color);
+        border-right: 100px solid var(--main-color);
+        border-bottom: 100px solid var(--main-color);
+        border-left: 100px solid transparent;
+    }
+
+
+
     .about {
         flex-direction: column-reverse;
         text-align: center;
@@ -856,6 +865,13 @@ span{
         text-align: center;
         margin-top: 2rem;
     }
+
+    .profession-container .overlay{
+        border-top: 100px solid var(--main-color);
+        border-right: 100px solid var(--main-color);
+        border-bottom: 100px solid var(--main-color);
+        border-left: 100px solid transparent;
+    }
 }
 
 @media (max-width : 450px ) {
@@ -883,5 +899,13 @@ span{
     .home .profession-box .profession:nth-child(4){
         transform: rotate(180deg) translate(-210px , -300px);
     }
+
+    .profession-container .overlay{
+        border-top: 100px solid var(--main-color);
+        border-right: 100px solid var(--main-color);
+        border-bottom: 100px solid var(--main-color);
+        border-left: 100px solid transparent;
+    }
+    
 }
 
